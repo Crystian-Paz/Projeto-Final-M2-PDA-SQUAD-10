@@ -39,6 +39,8 @@ header {
     --font-color-Login-Register:rgb(255, 255, 255);
     --font-color-Content-Main:rgb(255, 255, 255);
     --font-color-Button-Content-Main: rgb(192, 166, 135);
+    --font-color-Content-Team:black;
+    --font-shadow-color-Content-Team:white;
     --background-color: rgba(192, 164, 134, 0.144);
 }
 
@@ -132,7 +134,7 @@ header .home-Content {
 
 .banner {
     padding-top: 4rem;
-    margin-bottom: 9rem;
+    margin-bottom: 4.5rem;
 }
 
 .banner video{
@@ -195,21 +197,56 @@ header .home-Content {
     height: 20rem;
 }
 
+.team-Content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;   
+
+}
+
+.team-Content h1 {
+    display: flex;
+    align-items: center;
+    color: var(--font-color-Content-Team);
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--font-shadow-color-Content-Team);
+    font-size: 2rem;
+}
+
+.team-Content p {
+    display: flex;
+    align-items: center;
+    color: var(--font-color-Content-Team);
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--font-shadow-color-Content-Team);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
 .team-Organization {
-    display: grid;
-    column-gap: -4rem;
-    grid-row: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+
 }
 
 .container-Team {
-    width: 20rem;
-    height: 50rem;
+    width: 19rem;
+    height: 35rem;
     background-color: var(--container-color);
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
+}
+
+.container-Team p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 18rem;
 }
 
 .photograph img{
@@ -222,8 +259,14 @@ header .home-Content {
 
 .social {
     display: flex;
-    align-self: flex-start;
     padding: 1rem;
+}
+
+.social-Media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .social img {
