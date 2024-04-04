@@ -14,6 +14,7 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    
 }
 
 header {
@@ -32,9 +33,11 @@ header {
 
 :root {
     --container-color:rgb(2,150,16,0.2);
+    --container-color-Tech-Fox:rgb(2,150,16,0.1);
     --containet-color-Video:rgb(255,240,222, 0.7); 
     --header-color:rgb(255,240,222);
     --header-color-Border: rgb(192,164,134);
+    --header-color-Font:rgba(0, 182, 18, 0.61);
     --footer-color:rgb(0, 0, 0);
     --font-color-Login-Register:rgb(255, 255, 255);
     --font-color-Content-Main:rgb(255, 255, 255);
@@ -69,6 +72,12 @@ header .home-Content {
 .home-Content li {
     list-style: none;
     padding: 0.8rem;
+}
+
+.home-Content a {
+    text-decoration: none;
+    color: var(--header-color-Font);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgb(255, 255, 255);
 }
 
 .container-Login-Register {
@@ -226,9 +235,7 @@ header .home-Content {
 .team-Organization {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin: 3rem;
-
 }
 
 .container-Team {
@@ -236,10 +243,9 @@ header .home-Content {
     height: 35rem;
     background-color: var(--container-color);
     display: flex;
-    justify-content: start;
     flex-direction: column;
-    align-items: center;
     border-radius: 1rem;
+    align-items: center;
 }
 
 .container-Team p {
@@ -255,25 +261,52 @@ header .home-Content {
     border-radius: 10rem;
     border: 0.2rem outset var(--header-color);
     padding-top: 0.4rem;
+    display: flex;
+    
 }
 
 .social {
     display: flex;
-    padding: 1rem;
-}
-
-.social-Media {
-    display: flex;
+    padding-top: 1.5rem;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 1rem;
 }
 
 .social img {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 10rem;
     border: 0.1rem outset var(--header-color);
+}
+
+.tech-Fox-Container {
+    margin: 4rem;
+    background-color: var(--container-color-Tech-Fox);
+    border-radius: 0.5rem;
+    width: 72rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+.tech-Fox-Container img {
+    width: 30rem;
+    height: 15rem;
+    padding-left: 4rem;
+    display: flex;
+}
+
+.tech-Fox-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 4rem;
+}
+
+.tech-Fox-Content p {
+    max-width: 32rem;
+    text-indent:4em
 }
 
 footer {
