@@ -5,7 +5,7 @@
   <title>| Tech-Fox | Registro |</title>
   <link rel="shortcut icon" href="View/SRC/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  
 </head>
 <body>
   <div class="container" >
@@ -13,42 +13,44 @@
     <a class="links" id="paralogin"></a>
      
 
-      <div id="register">
+      <div id="register-user">
         <form method="post" action=""> 
           <h1>Cadastro</h1> 
            
-          <p> 
-            <label for="name_cad">Seu nome</label>
-            <input id="name_cad" name="name_cad" required="required" type="text" placeholder="name" />
-          </p>
-           
-          <p> 
-            <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
-          </p>
-           
-          <p> 
-            <label for="password_cad">Sua senha</label>
-            <input id="password_cad" name="password_cad" required="required" type="password" placeholder="ex. 1234"/>
-          </p>
+          
+            <ul>
+              <li>
+                <label for="name-cad">Seu nome</label>
+              <input id="name-cad" name="name-cad" type="text" placeholder="name" />
+            </li>
 
-          <p> 
-            <label for="#confirmation_Password">Confirmar senha</label>
-            <input id="#confirmation_Password" name="confirmation_Password" required="required" type="Password" placeholder="ex. 1234"/>
-          </p>
+              <li><label for="email-cad">Seu e-mail</label>
+              <input id="email-cad" name="email-cad"  type="email" placeholder="contato@htmlecsspro.com"/>
+            </li>
+
+              <li><label for="password-cad">Sua senha</label>
+              <input id="password-cad" name="password-cad"  type="password" placeholder="ex. 1234"/>
+            </li>
+            
+              <li><label for="confirmPassword">Confirmar senha</label>
+              <input id="confirmPassword" name="confirmPassword"  type="Password" placeholder="ex. 1234"/>
+            </li>
+            </ul>
+          
            
-          <p> 
-            <input type="submit" value="register"/> 
-          </p>
+           
+            <input type="submit" id="register" value="register"/> 
+          
            
           <p class="link">  
             Já tem conta?
             <!--<a href="#paralogin"> Ir para Login </a> -->
 
-          </p>
+          
         </form>
       </div>
     </div>
   </div>  
+  <script src="../JavaScript/register.js"></script>
 </body>
 </html>

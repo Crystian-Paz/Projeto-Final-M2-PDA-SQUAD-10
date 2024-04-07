@@ -1,40 +1,44 @@
-//Registro
 const $ = (elemento) => document.querySelector(elemento);
-$("#register").addEventListener("click", (ev) => {
+$("#register-user")
+
+const registerButton = $("#register");
+if (registerButton) {
+  registerButton.addEventListener("click", (ev) => {
     ev.preventDefault();
-  const name = $("#name_cad").value;
-  const email = $("#email_cad").value;
-  const password = $("#password_cad").value;
-  const confirmationpassword = $("#confirmation_Password").value;
-  const confirmedpassword = password === confirmation-password;
-  if (!confirmed-password) {
+  const name = $("#name-cad").value;
+  const email = $("#email-cad").value;
+  const  passWord = $("#password-cad").value;
+  const confirmPassword = $("#confirmPassword").value;
+
+  const passwordConfirmed = passWord === confirmPassword;
+
+  if (!passwordConfirmed) {
       alert("Sua confirmação de senha não confere.\nPor favor verifique.");
       return;
   }
 
-  const allfilled=
+  const allFilled =
       name.length !== 0 &&
       email.length !== 0 &&
-      confirmationpassword.length !== 0 &&
-      password.length !== 0;
-     
+      passwordConfirmed.length !== 0 &&
+      passWord.length !== 0;
 
-  if (allfilled === false) {
+  if (allFilled === false) {
       alert("Preencha todos os campos antes de enviar.");
       return;
   }
+
   const users = JSON.parse(localStorage.getItem("users")) || [];
-  const newuser = {
+  const newUsers = {
       name,
       email,
-      senha,
-      confirmaSenha,
+      passWord,
+      confirmPassword,
   };
-  users.push(newuser);
+  users.push(newUsers);
   localStorage.setItem("users", JSON.stringify(users));
 
   localStorage.setItem('username', name);
   alert("Cadastro realizado com sucesso!");
-  window.location.href = "C:\Users\kauan\Projeto-Final-M2-PDA-SQUAD-10\View\HTML\login.Html ";
-});
-
+  window.location.href = "../View/HTML/login.Html";
+})};
