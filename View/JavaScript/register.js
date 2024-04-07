@@ -43,4 +43,9 @@ if (registerButton) {
   window.location.href = "../View/HTML/login.Html";
 })};
 
-
+document.getElementById("clear").addEventListener("click", () => {
+    document.getElementById("#name-cad").value = "";
+    document.getElementById("#email-cad").value = "";
+    document.getElementById("#password-cad").value = "";
+    document.getElementById("#confirmPassword").value = "";
+});
