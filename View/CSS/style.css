@@ -272,7 +272,6 @@ header .home-Content {
     height: 10rem;
     border-radius: 10rem;
     border: 0.2rem outset var(--header-color);
-    padding-top: 0.4rem;
     display: flex;
     
 }
