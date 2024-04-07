@@ -42,3 +42,5 @@ if (registerButton) {
   alert("Cadastro realizado com sucesso!");
   window.location.href = "../View/HTML/login.Html";
 })};
+
+
