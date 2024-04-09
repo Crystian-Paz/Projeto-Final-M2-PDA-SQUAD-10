@@ -107,11 +107,11 @@ header .home-Content {
     border-bottom: 1rem solid var(--container-color);
     border-right: 1rem solid var(--container-color);;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 3s;
 }
 
 .highlighted {    
-    transform: rotatey(180deg);
+    transform: rotatey(360deg) rotatex(360deg);
 
 }
 
