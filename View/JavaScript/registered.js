@@ -2,7 +2,7 @@ const div = document.getElementById('myDiv');
 
 div.addEventListener('mouseover', () => {
     div.classList.add('highlighted');
-    text();
+    
 });
 
 div.addEventListener('mouseout', () => {
