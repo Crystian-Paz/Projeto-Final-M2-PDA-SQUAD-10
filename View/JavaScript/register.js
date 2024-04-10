@@ -34,13 +34,14 @@ if (registerButton) {
       email,
       passWord,
       confirmPassword,
+      
   };
   users.push(newUsers);
   localStorage.setItem("users", JSON.stringify(users));
 
   localStorage.setItem('username', name);
   alert("Cadastro realizado com sucesso!");
-  window.location.href = "../View/HTML/login.Html";
+  window.location.href = "../HTML/login.Html";
 })};
 
 document.getElementById("clear").addEventListener("click", () => {
