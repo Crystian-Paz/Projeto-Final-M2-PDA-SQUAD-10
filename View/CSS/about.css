@@ -154,3 +154,69 @@ header .home-Content {
 .login-Registre a :hover {
     color: rgb(0, 0, 0);    
 }
+
+footer {
+    display: flex;
+    width: 100%;
+    height: rem;
+    background-color: var(--footer-color);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1;
+}
+
+.footer-Content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 12rem;
+}
+
+footer img {
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    height: 5.5rem;
+    border-radius: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+
+}
+
+footer ul h2 {
+    font-size: 0.8rem;
+    border-bottom: 0.1rem solid white;
+}
+
+.container-Footer {
+    width: 8.5rem;
+    height: 5.5rem;
+    background-color: var(--footer-color-Img);
+    border-radius: 1rem;
+    border: 0.7rem double var(--container-color);
+}
+
+footer ul li {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--footer-color-Img);
+}
+
+footer a:hover {
+    background-color: var(--footer-color-A);
+    border-radius: 0.02rem;
+    scroll-behavior: smooth;
+}
