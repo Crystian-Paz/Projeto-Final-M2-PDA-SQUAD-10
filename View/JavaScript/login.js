@@ -4,13 +4,13 @@ document.getElementById("loginForm").addEventListener("submit", (ev) => {
     const loginInput = document.getElementById("name-cad").value;
     const passwordInput = document.getElementById("password-cad").value;
 
-    const user = JSON.parse(localStorage.getItem("users")) || [];
-    const registereduser = user.find(user => user.login === loginInput && user.password === passwordInput);
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const registeredUser = users.find(user => user.name === loginInput && user.passWord === passwordInput);
 
-    if (!registereduser) {
+    if (!registeredUser) {
         alert("Dados inválidos!");
         return;
     }
 
-    window.location.href = "../View/HTML/registered.html";
+    window.location.href = "../../View/HTML/registered.html";
 });
