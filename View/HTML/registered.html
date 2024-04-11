@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>| Tech-Fox | Registrado |</title>
-    <link rel="shortcut icon" href="View/SRC/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="View/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/registered.css">
 </head>
 <section id="header">
     <header>
         <div class="header-Image">
-            <img src="../SRC/Fauget-removebg-preview.png" alt="">
+            <img src="../imgs/Fauget-removebg-preview.png" alt="">
         </div>
         <div class="home-Content">
             <ul>
@@ -29,7 +29,7 @@
         <div id="myDiv" class="container-Content">
             <div id="textcontent" class="organization-Content">
                 <h1>
-                    Parabéns você esta inscrito no Hackaton Tech-Fox!
+                    Parabéns <span id="username"></span>! você esta inscrito no Hackaton Tech-Fox!
                 </h1>
                 <p>
                     Agora só esperar até o começo do Hackaton, não se esqueça de dar uma olhada na página "Sobre",
@@ -43,7 +43,7 @@
         <footer>
             <div class="footer-Content">
                 <div class="container-Footer">
-                    <img src="../SRC/Fauget.png" alt="">
+                    <img src="../imgs/Fauget.png" alt="">
                 </div>
                 <ul>
                     <h2>Seguimento</h2>
@@ -71,11 +71,13 @@
                     </a>
                 </ul>
                 <div class="container-Footer">
-                    <img src="../SRC/PDA LOGO.png" alt="">
+                    <img src="../imgs/PDA LOGO.png" alt="">
                 </div>
             </div>
         </footer>
     </section>
     <script src="../JavaScript/registered.js"></script>
+    <script> const username = localStorage.getItem('username');
+        document.getElementById('username').innerText = username;</script>
 </body>
 </html>
