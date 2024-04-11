@@ -42,6 +42,7 @@ header {
     --font-color-Content-Main:rgb(255, 255, 255);
     --font-color-Button-Content-Main: rgb(192, 166, 135);
     --font-color-Content-Team:black;
+    --team-shadow-color:rgba(2, 150, 17, 0.247);
     --font-shadow-color-Content-Team:white;
     --background-color: rgba(192, 164, 134, 0.144);
     --footer-color-Img:rgba(255, 240, 222);
@@ -183,8 +184,20 @@ header .home-Content {
     border: 0.1rem solid var(--header-color);
     border-radius: 0.5rem;
     cursor: pointer;
-    transition: border-right, border-left, border-bottom, border-top 0.7s ease;
+}
 
+@keyframes float {
+    0%{
+        transform: rotatez(1deg) rotateX(5deg);
+    }
+
+    50%{
+        transform: rotatez(-1deg) rotateX(5deg);
+    }
+
+    100%{
+        transform: rotatez(1deg) rotateX(5deg);
+    }
 }
 
 .content-Main button a {
@@ -258,6 +271,12 @@ header .home-Content {
     flex-direction: column;
     border-radius: 1rem;
     align-items: center;
+    box-shadow: 10px 5px 5px var(--team-shadow-color);
+}
+
+.container-Team:hover {
+    transform: rotatez(2deg) rotateX(20deg);
+    animation: float 1.5s ease-in-out infinite;
 }
 
 .container-Team p {
@@ -290,13 +309,19 @@ header .home-Content {
     border: 0.1rem outset var(--header-color);
 }
 
+.tech-Fox-Organization {
+    display: flex;
+    justify-content: center;
+}
+
 .tech-Fox-Container {
     margin: 4rem;
     background-color: var(--container-color-Tech-Fox);
     border-radius: 0.5rem;
-    width: 91%;
+    width: 75rem;
     height: 28rem;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -304,6 +329,7 @@ header .home-Content {
     width: 30rem;
     height: 15rem;
     padding-left: 2rem;
+    margin-left: -5rem;
     display: flex;
 }
 
@@ -312,7 +338,7 @@ header .home-Content {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 5rem;
 }
 
 .tech-Fox-Content h1 {
