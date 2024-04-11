@@ -13,7 +13,7 @@ body {
     color: white;
     padding-top: 8rem;
 }
-
+/*NAVBAR*/
 header {
     position: fixed;
     width: 100%;
@@ -149,7 +149,7 @@ header .home-Content {
 .login-Registre a :hover {
     color: rgb(0, 0, 0);    
 }
-
+/*Circle*/
 .info-Organization {
     margin-top: 30px;
     display: flex;
@@ -250,7 +250,24 @@ header .home-Content {
     border: none;
     text-transform: uppercase;
 }
-
+/*Message*/
+.Message-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.Message-left, .Message-right {
+    width: 45%;
+}
+.Message-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Message-box {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;}
 /*FOOTER*/
 footer {
     display: flex;
