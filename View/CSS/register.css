@@ -229,7 +229,6 @@ input[type="reset"] {
 footer {
   display: flex;
   width: 100%;
-  height: rem;
   background-color: var(--footer-color);
   align-items: center;
   justify-content: center;
@@ -290,4 +289,61 @@ footer a:hover {
   background-color: var(--footer-color-A);
   border-radius: 0.02rem;
   scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+    
+  header {
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+  }
+
+  .header-Image {
+      margin-left:25rem;
+      margin-right: 1rem;
+  }
+  
+  .home-Content ul {
+      margin-left: -25rem;
+      font-size: 0.8rem;
+  }
+
+  .home-Content li {
+      padding: 0.3rem;
+  }
+
+  .register-user {
+    width: 20rem;
+    height: 35rem;
+    background:rgb(2,150,16,0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  footer {
+      width: 100%
+  }
+
+  footer img {
+      width: 5rem;
+      height: 3rem;
+  }
+
+  .container-Footer {
+      width: 5rem;
+      height: 3rem;
+  }
+
+  footer ul li {
+      font-size: 0.5rem;
+  }
+
+  footer ul h2 {
+      font-size: 0.5rem;
+  }
+
+  .footer-Content {
+      gap:0.7rem
+  }
 }
