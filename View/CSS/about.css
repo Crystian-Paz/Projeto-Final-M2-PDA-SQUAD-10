@@ -6,6 +6,13 @@ body {
     background-color: rgb(255,240,222);
 }
 
+html {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 .header {
     text-align: center;
     padding: 50px;
@@ -159,7 +166,7 @@ header .home-Content {
 }
 
 .Circle{
-    margin-top: 40px;
+    margin-top: 50px;
     height: 120px;
     width: 120px;
     background-color: #87FF6E;
@@ -193,7 +200,7 @@ header .home-Content {
 
 /*Problemática e objetivo*/
 .problem-objective-container {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     background: linear-gradient(to right, #0A7900 50% , #87FF6E 50%);
     padding: 20px;
@@ -252,6 +259,7 @@ header .home-Content {
 }
 /*Message*/
 .Message-container {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -270,6 +278,7 @@ header .home-Content {
     padding: 10px;}
 /*FOOTER*/
 footer {
+    margin-top: 50px;
     display: flex;
     width: 100%;
     height: rem;
