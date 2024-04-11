@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: rgb(255,240,222);
 }
+
 .header {
     text-align: center;
     padding: 50px;
@@ -157,7 +158,7 @@ header .home-Content {
     justify-content: space-evenly;
 }
 
-.circulo{
+.Circle{
     margin-top: 40px;
     height: 120px;
     width: 120px;
@@ -169,7 +170,7 @@ header .home-Content {
     justify-content: center;
 }
 
-.circulo img {
+.Circle img {
     height: 90px;
     width: 90px;
 }
@@ -186,7 +187,7 @@ header .home-Content {
     align-items:center;
 }
 
-#informações p {
+#info p {
     font-size: 0.8em;
 }
 
@@ -238,6 +239,7 @@ header .home-Content {
     border: none;
     text-transform: uppercase;
 }
+
 .problem-objective-organization1 button1 {
     border-radius: 20px; 
     display: inline-block;
@@ -248,59 +250,6 @@ header .home-Content {
     border: none;
     text-transform: uppercase;
 }
-
-/*GROUP
-.photo img{
-  object-fit: cover;
-  width: 100%;
-  height: flex;
-}*/
-/*PODIUM
-@keyframes example {
-    0%   {transform: translateY(0px);}
-    50%  {transform: translateY(-20px);}
-    100% {transform: translateY(0px);}
-}
-  
-.podium {
-    width: 50px;
-    height: 100px;
-    background-color: #333;
-    position: relative;
-    animation-name: example;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
-  
-.first {
-    height: 100%;
-    background-color: gold;
-}
-  
-.second {
-    height: 80%;
-    background-color: silver;
-    position: absolute;
-    bottom: 0;
-    left: 60px;
-}
-  
-.third {
-    height: 60%;
-    background-color: #cd7f32;
-    position: absolute;
-    bottom: 0;
-    left: 120px;
-}
-  
-.text {
-    position: absolute;
-    bottom: 10px;
-    color: white;
-    width: 100%;
-    text-align: center;
-}  
-*/
 
 /*FOOTER*/
 footer {
