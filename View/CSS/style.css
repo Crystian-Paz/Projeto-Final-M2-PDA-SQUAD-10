@@ -290,13 +290,19 @@ header .home-Content {
     border: 0.1rem outset var(--header-color);
 }
 
+.tech-Fox-Organization {
+    display: flex;
+    justify-content: center;
+}
+
 .tech-Fox-Container {
     margin: 4rem;
     background-color: var(--container-color-Tech-Fox);
     border-radius: 0.5rem;
-    width: 91%;
+    width: 75rem;
     height: 28rem;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -304,6 +310,7 @@ header .home-Content {
     width: 30rem;
     height: 15rem;
     padding-left: 2rem;
+    margin-left: -5rem;
     display: flex;
 }
 
@@ -312,7 +319,7 @@ header .home-Content {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 5rem;
 }
 
 .tech-Fox-Content h1 {
