@@ -10,7 +10,7 @@ body {
     padding: 50px;
     background-color: rgba(0, 182, 18, 0.61);
     color: white;
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 
 header {
@@ -175,7 +175,7 @@ header .home-Content {
 
 .info-Circle p {
     font-size: 10px;
-    max-width: 200px;
+    max-width: 250px;
     padding: 5px;
 }
 
@@ -189,6 +189,57 @@ header .home-Content {
     font-size: 0.8em;
 }
 
+.photo img{
+    width: 100%;
+    height: auto;
+  }
+/*PODIUM*/
+@keyframes example {
+    0%   {transform: translateY(0px);}
+    50%  {transform: translateY(-20px);}
+    100% {transform: translateY(0px);}
+}
+  
+.podium {
+    width: 50px;
+    height: 100px;
+    background-color: #333;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+  
+.first {
+    height: 100%;
+    background-color: gold;
+}
+  
+.second {
+    height: 80%;
+    background-color: silver;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+}
+  
+.third {
+    height: 60%;
+    background-color: #cd7f32;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+}
+  
+.text {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}  
+
+/*FOOTER*/
 footer {
     display: flex;
     width: 100%;
