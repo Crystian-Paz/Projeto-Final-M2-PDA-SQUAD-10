@@ -100,12 +100,12 @@ header .home-Content {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    margin-right: -20rem;
+    margin-right: -7rem;
     border-radius: 0.3rem;
 }
 
 .login-Registre {
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: end;
     
@@ -205,14 +205,6 @@ header .home-Content {
     color: var(--font-color-Button-Content-Main);
 }
 
-.content-Main button:hover {
-    border-radius: 0.5rem;
-    border-right: 0.2rem solid var(--font-color-Button-Content-Main);
-    border-bottom: 0.2rem solid var(--font-color-Button-Content-Main);
-    border-top: 0.2rem solid var(--font-color-Button-Content-Main);
-    border-left: 0.2rem solid var(--font-color-Button-Content-Main);
-}
-
 .container-Video {
     margin: 4rem;
     display: flex;
@@ -233,7 +225,7 @@ header .home-Content {
 
 .team-Content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;   
 
@@ -241,7 +233,9 @@ header .home-Content {
 
 .team-Content h1 {
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     color: var(--font-color-Content-Team);
     text-shadow: 0.1rem 0.1rem 0.1rem var(--font-shadow-color-Content-Team);
     font-size: 2rem;
@@ -415,4 +409,167 @@ footer a:hover {
     background-color: var(--footer-color-A);
     border-radius: 0.02rem;
     scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    header {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-Image {
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+    
+    .home-Content ul {
+        margin-left: -10rem;
+        font-size: 0.8rem;
+    }
+
+    .home-Content li {
+        padding: 0.3rem;
+    }
+
+    .login-Registre img {
+        margin: 0.2rem;
+    }
+
+    .container-Login-Register {
+        width: 6rem;
+        height: 3rem;
+        margin-left: 1rem;
+        
+    }
+
+    .login-Registre ul {
+        font-size: 0.7rem;
+    }
+
+    .container-Video {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        margin-top: 8rem;
+    }
+    
+    .content-Main {
+        font-size: 0.5rem;
+        margin-left: -1.5rem;
+        margin-top: 5.5rem;
+    }
+
+    .container-Video img {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-Organization{
+        justify-content: start;
+        align-items: center;
+    }
+
+    .banner {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner video {
+        width: 100%;
+        height: 40%;
+    }
+
+    .team-Content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-Content h1 {
+        justify-content: center;
+        font-size: 2rem;
+        max-width: 25rem;
+    }
+    
+    .team-Content p {
+        font-size: 1.2rem;
+    }
+
+    .team-Organization {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-Team {
+       height: 35rem;
+    }
+
+    .tech-Fox-Container {
+        width: 25rem;
+        height: 15rem;
+        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        justify-content: center;
+        padding-left: -2rem;
+    }
+
+    .tech-Fox-Container img {
+        width: 10rem;
+        height: 8rem;
+        margin-left:0.5rem;
+        padding: 0;
+        margin-right: 0.5rem;
+    }
+
+    .tech-Fox-Content {
+        margin-left: 0;
+    }
+    
+    .tech-Fox-Content h1 {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .tech-Fox-Content  p{
+        font-size:0.5rem;
+        max-width: 12rem;
+        margin-left: 0;
+    }
+
+    footer {
+        width: 100%
+    }
+
+    footer img {
+        width: 5rem;
+        height: 3rem;
+    }
+
+    .container-Footer {
+        width: 5rem;
+        height: 3rem;
+    }
+
+    footer ul li {
+        font-size: 0.5rem;
+    }
+
+    footer ul h2 {
+        font-size: 0.5rem;
+    }
+
+    .footer-Content {
+        gap:0.7rem
+    }
 }
