@@ -8,7 +8,7 @@ body {
 .header {
     text-align: center;
     padding: 50px;
-    background-color: rgba(0, 182, 18, 0.61);
+    background-color: #0A7900;
     color: white;
     padding-top: 8rem;
 }
@@ -150,6 +150,7 @@ header .home-Content {
 }
 
 .info-Organization {
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items:baseline;
@@ -160,7 +161,7 @@ header .home-Content {
     margin-top: 40px;
     height: 120px;
     width: 120px;
-    background-color: #0eb94f;
+    background-color: #87FF6E;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -189,11 +190,72 @@ header .home-Content {
     font-size: 0.8em;
 }
 
+/*Problemática e objetivo*/
+.problem-objective-container {
+    margin-top: 30px;
+    display: flex;
+    background: linear-gradient(to right, #0A7900 50% , #87FF6E 50%);
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.problem-objective-organization {
+    width: 45%;
+}
+
+.problem-objective-organization h2 {
+    font-size: 24px;
+    color: #87FF6E;
+}
+
+.problem-objective-organization p {
+    font-size: 16px;
+    color: white;
+}
+
+.problem-objective-organization1 {
+    width: 45%;
+}
+
+.problem-objective-organization1 h2 {
+    font-size: 24px;
+    color: #0A7900;
+}
+
+.problem-objective-organization1 p {
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.problem-objective-organization button {
+    border-radius: 20px;    
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #87FF6E;
+    color: #0A7900;
+    border: none;
+    text-transform: uppercase;
+}
+.problem-objective-organization1 button1 {
+    border-radius: 20px; 
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0A7900;
+    color: #87FF6E;
+    border: none;
+    text-transform: uppercase;
+}
+
+/*GROUP
 .photo img{
-    width: 100%;
-    height: auto;
-  }
-/*PODIUM*/
+  object-fit: cover;
+  width: 100%;
+  height: flex;
+}*/
+/*PODIUM
 @keyframes example {
     0%   {transform: translateY(0px);}
     50%  {transform: translateY(-20px);}
@@ -238,6 +300,7 @@ header .home-Content {
     width: 100%;
     text-align: center;
 }  
+*/
 
 /*FOOTER*/
 footer {
